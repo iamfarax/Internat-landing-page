@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+}
+.main-nav {
+  width: 80%;
+  margin: auto;
+}
+.logo {
+  background-color: blue;
+  background-blend-mode: darken;
+  color: whitesmoke;
+  padding: 1% 1%;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.price-card-section {
+  width: 80%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item {
+  margin: 5% 2;
+  width: 50rem;
+}
+.footer-width {
+  width: 80%;
+  height: 12vh;
+  margin: auto;
+  border: none;
+  outline: none;
+}
+.Nb-class {
+  border: none;
+  outline: none;
+}
+.footer-border {
+  border-top: 2% solid black;
+}
+.burger {
+  position: sticky;
+  top: 4%;
+  right: 88%;
+  cursor: pointer;
+  display: none;
+}
+.line {
+  background-color: black;
+  width: 32px;
+  height: 6px;
+  margin: 6% 3%;
+}
+@media only screen and (max-width: 1250px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #navbarNavDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+  }
+  #container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .v-nav-resp {
+    opacity: 1;
+  }
+  .h-nav-resp {
+    height: 1vh;
+  }
+  .burger {
+    display: block;
+  }
+}

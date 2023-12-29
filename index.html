@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Project1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary main-nav">
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <span class="logo">PAKINTERNET</span>
+      <div class="container-fluid v-nav-resp h-nav-resp" id="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Wired Internet</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Products & Pakages</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Wireless Internet</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">LogIn/Register</button>
+      </div>
+    </nav>
+    <div class="price-section">
+      <div class="price-section-heading-contant ">
+       <div class="card text-center Nb-class">
+        <div class="card-body">
+          <h2 class="card-title">Pricing Plans</h2>
+          <p class="card-text">All plans include 40+ Advantages and features to boost your Products</p>
+          <p class="card-text">Chose the best plane to fit your needs</p>
+          <a href="index.html" class="btn btn-primary">Get 2Months Free</a>
+        </div>
+      </div>
+    
+    </div>
+   <div class="price-card-section">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center    card-item">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Basic</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Phone&Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Standard</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Phone&Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone&Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="footer footer-border">
+    <div class="card footer-width">
+    <div class="card-body">
+      <h5 class="card-title">Still not convinced? Start 14days FREE trails!!</h5>
+      <p class="card-text">You will get full access to with all the features for 14 days</p>
+      <a href="index.html" class="btn btn-primary">Start 14 days FREE trails</a>
+    </div>
+  </div>
+</div>
+  </body>
+  <script>
+  let Navitem=document.querySelector("#container-fluid");
+    let Burger=document.querySelector(".burger");
+    Burger.addEventListener("click",()=>{
+      Navitem.classList.toggle(".v-nav-resp")
+      Navitem.classList.toggle("h-nav-resp")
+    })
+
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
